@@ -3,7 +3,7 @@ body {
 }
 
 img {
-    margin: 0 -40px;
+  margin: 0 -40px;
 }
 
 h1 {
@@ -31,12 +31,9 @@ p {
   color: white;
 }
 
-.logo {
-  width: 50px;
-  fill: white;
-  padding-right: 15px;
-  display: inline-block;
-  vertical-align: middle;
+.logo:hover {
+  animation: bounce 1.5s;
+  animation-delay: 0s;
 }
 
 .inner-header {
@@ -100,6 +97,29 @@ p {
     transform: translate3d(85px, 0, 0);
   }
 }
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-20px);
+  }
+  30% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  90% {
+    transform: translateY(-5px);
+  }
+}
+
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
