@@ -3,26 +3,25 @@ import "./ServicesSection.scss";
 ---
 
 <section class="ServicesSection">
-  <div id="carousel">
-    <figure id="spinner">
-      <img src="/techLogos/TypeScript.png" alt="react" />
-      <img src="/techLogos/JavaScript.png" alt="react" />
-      <img src="/techLogos/NodeJS.png" alt="react" />
-      <img src="/techLogos/Docker.png" alt="react" />
-      <img src="/techLogos/GIT.png" alt="react" />
-      <img src="/techLogos/CPP.png" alt="react" />
-      <img src="/techLogos/Angular.png" alt="react" />
-      <img src="/techLogos/REACT.png" alt="react" />
-    </figure>
+  <div class="carouselSection">
+    <div id="carousel">
+      <figure id="spinner">
+        <div class="imageDiv"><img src="/techLogos/TypeScript.png" alt="TypeScript" /></div>
+        <div class="imageDiv"><img src="/techLogos/JavaScript.png" alt="JavaScript" /></div>
+        <div class="imageDiv"><img src="/techLogos/NodeJS.png" alt="NodeJS" /></div>
+        <div class="imageDiv"><img src="/techLogos/Docker.png" alt="Docker" /></div>
+        <div class="imageDiv"><img src="/techLogos/GIT.png" alt="GIT" /></div>
+        <div class="imageDiv"><img src="/techLogos/CPP.png" alt="CPP" /></div>
+        <div class="imageDiv"><img src="/techLogos/Angular.png" alt="Angular" /></div>
+        <div class="imageDiv"><img src="/techLogos/REACT.png" alt="REACT" /></div>
+      </figure>
+    </div>
+    <span id="leftButton" class="ss-icon carousel-button">&lt;</span>
+    <span id="rightButton" class="ss-icon carousel-button"> &gt;</span>
   </div>
-  <span id="leftButton" style="float:left" class="ss-icon">&lt;</span>
-  <span id="rightButton" style="float:right" class="ss-icon"> &gt;</span>
-
   <div id="description"></div>
-
-
-  </div>
 </section>
+
 <script>
   import "./ServicesSection.js";
 </script>
