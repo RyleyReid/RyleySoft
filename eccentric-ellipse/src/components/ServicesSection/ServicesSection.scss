@@ -3,21 +3,28 @@
   display: flex;
   flex-direction: row;
 }
+.buttonSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .description{
   display: flex;
+  flex-direction: column;
   flex: 1;
   justify-content: center;
   align-items: center;
+  margin: 0 40px;
 }
 .ServicesSection{
   flex: 1;
   justify-content: center;
   align-items: center;
 }
-img {
+.logo {
   height: 200px;
   width: auto;
-  opacity: .5;
+  opacity: 0.1;
 }
 div#carousel {
   width: 800px;
@@ -38,10 +45,16 @@ figure#spinner {
 figure#spinner .imageDiv {
   width: 40%;
   max-width: 425px;
+  padding: 30px;
   position: absolute;
   left: 30%;
   transform-origin: 50% 50% -500px;
   outline: 1px solid transparent;
+
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
 }
 figure#spinner .imageDiv:nth-child(1) {
   transform: rotateY(0deg);
@@ -68,18 +81,32 @@ figure#spinner .imageDiv:nth-child(7) {
 figure#spinner .imageDiv:nth-child(8) {
   transform: rotateY(-315deg);
 }
-div#carousel ~ span {
-  color: #ffffff;
+a {
+  color: #5cc55c;
   background-color: white;
   margin: 5%;
-  display: inline-block;
+  padding: 15px; 
   font-size: 2rem;
   transition: 0.6s color;
-  border-radius: 50%;
-  margin-top: -6rem;
-  line-height: 0;
+  border-radius: 4px; 
+  display: inline-block; 
+  text-decoration: none; 
+  line-height: 1;
 }
-div#carousel ~ span:hover {
+a:hover {
   color: #000000;
   cursor: pointer;
+}
+@media (min-width: 1001px) {
+  .ServicesSection {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 1000px) {
+  .ServicesSection {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

@@ -6,20 +6,25 @@ import "./ServicesSection.scss";
   <div class="carouselSection">
     <div id="carousel">
       <figure id="spinner">
-        <div class="imageDiv" id="TypeScript"><img src="/techLogos/TypeScript.png" alt="TypeScript" /></div>
-        <div class="imageDiv" id="NodeJS"><img src="/techLogos/NodeJS.png" alt="NodeJS" /></div>
-        <div class="imageDiv" id="astro"><img src="/techLogos/astro.png" alt="astro" /></div>
-        <div class="imageDiv" id="Docker"><img src="/techLogos/Docker.png" alt="Docker" /></div>
-        <div class="imageDiv" id="GIT"><img src="/techLogos/GIT.png" alt="GIT" /></div>
-        <div class="imageDiv" id="CPP"><img src="/techLogos/CPP.png" alt="CPP" /></div>
-        <div class="imageDiv" id="Angular"><img src="/techLogos/Angular.png" alt="Angular" /></div>
-        <div class="imageDiv" id="REACT"><img src="/techLogos/REACT.png" alt="REACT" /></div>
+        <div class="imageDiv" id="TypeScript"><img class="logo" src="/techLogos/TypeScript.png" alt="TypeScript" /></div>
+        <div class="imageDiv" id="NodeJS"><img class="logo" src="/techLogos/NodeJS.png" alt="NodeJS" /></div>
+        <div class="imageDiv" id="astro"><img class="logo" src="/techLogos/astro.png" alt="astro" /></div>
+        <div class="imageDiv" id="Docker"><img class="logo" src="/techLogos/Docker.png" alt="Docker" /></div>
+        <div class="imageDiv" id="GIT"><img class="logo" src="/techLogos/GIT.png" alt="GIT" /></div>
+        <div class="imageDiv" id="CPP"><img class="logo" src="/techLogos/CPP.png" alt="CPP" /></div>
+        <div class="imageDiv" id="Angular"><img class="logo" src="/techLogos/Angular.png" alt="Angular" /></div>
+        <div class="imageDiv" id="REACT"><img class="logo" src="/techLogos/REACT.png" alt="REACT" /></div>
       </figure>
     </div>
-    <span id="leftButton" class="ss-icon">&lt;</span>
-    <span id="rightButton" class="ss-icon"> &gt;</span>
+    <div class="buttonSection">
+      <a id="leftButton" class="ss-icon button">&lt;</a>
+      <a id="rightButton" class="ss-icon button"> &gt;</a>
+    </div>
   </div>
-  <div id="description" class="description"></div>
+  <div class="description">
+    <h2 id="title"></h2>
+    <h5 id="techDescription"></h5> 
+  </div>
 </section>
 
 <script>
