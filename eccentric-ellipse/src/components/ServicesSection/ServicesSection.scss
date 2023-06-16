@@ -11,10 +11,15 @@
 .description{
   display: flex;
   flex-direction: column;
+  width: 400px;
   flex: 1;
   justify-content: center;
   align-items: center;
   margin: 0 40px;
+  border: 5px solid white;
+  border-radius: 0;
+  padding: 15px;
+  height: 600px;
 }
 .ServicesSection{
   flex: 1;
@@ -28,6 +33,7 @@
 }
 div#carousel {
   width: 800px;
+  height: 300px;
   perspective: 500px;
   justify-content: center;
   background: transparent;
@@ -44,7 +50,7 @@ figure#spinner {
 }
 figure#spinner .imageDiv {
   width: 40%;
-  max-width: 425px;
+  width: 250px;
   padding: 30px;
   position: absolute;
   left: 30%;
