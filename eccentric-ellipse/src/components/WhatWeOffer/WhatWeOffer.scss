@@ -1,0 +1,19 @@
+.section {
+  background-color: #FFFDD0;
+  color: rgb(0, 0, 0);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sparkle {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-image: url('/public/icons/sparkle.png'); /* replace with your sparkle image */
+  background-size: cover;
+  pointer-events: none;
+  transition: top ease 0.2s, left ease 0.2s;
+}
